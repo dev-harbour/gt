@@ -29,7 +29,6 @@ jobs:
         install: >-
           mingw-w64-x86_64-gcc
           mingw-w64-x86_64-SDL2
-          mingw-w64-x86_64-opengl
           make
 
     - name: Build (Linux)
