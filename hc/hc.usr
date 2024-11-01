@@ -1,0 +1,24 @@
+Global-settings:
+width = 800
+height = 450
+saveWindowSize = T
+widthPos = 972
+heightPos = 554
+saveWindowPosition = T
+aPanel = lPanel
+
+lPanel
+sizeVisible = T
+attrVisible = T
+dateVisible = T
+timeVisible = T
+currentDir = /home/harbour/Dokumenty/gt/hc/
+lEnd
+
+rPanel
+sizeVisible = T
+attrVisible = T
+dateVisible = T
+timeVisible = T
+currentDir = /home/harbour/Dokumenty/gt/hc/
+rEnd

@@ -1,0 +1,6 @@
+# GT
+*.bak
+*.exe
+build
+lib
+tmp
