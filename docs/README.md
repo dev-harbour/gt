@@ -36,7 +36,7 @@ Before installing the packages, make sure you're running the MinGW 64-bit shell.
 
    ```
    sudo apt update
-   sudo apt install libsdl2-dev
+   sudo apt install libsdl2-dev libgl-dev
    git clone https://github.com/dev-harbour/gt.git
    ```
 - To build the static library, execute:
