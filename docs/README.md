@@ -11,7 +11,6 @@ Before installing the packages, make sure you're running the MinGW 64-bit shell.
    ```
    pacman -S mingw-w64-x86_64-gcc
    pacman -S mingw-w64-x86_64-SDL2
-   pacman -S mingw-w64-x86_64-opengl
    pacman -S make
    git clone https://github.com/dev-harbour/gt.git
    ```
