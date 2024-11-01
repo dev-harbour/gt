@@ -112,20 +112,12 @@ GT *gt_createWindow( int width, int height, const char *title, const char *hexCo
    gt->height = height;
    gt->background = hexColor;
 
-   SDL_SetHint( SDL_HINT_VIDEO_HIGHDPI_DISABLED, "0" );
-
    if( SDL_Init( SDL_INIT_VIDEO ) != 0 )
    {
       fprintf( stderr, "Unable to initialize SDL: %s\n", SDL_GetError() );
       free( gt );
       return NULL;
    }
-
-   SDL_GL_SetAttribute( SDL_GL_DOUBLEBUFFER, 1 );
-   SDL_GL_SetAttribute( SDL_GL_DEPTH_SIZE, 24 );
-   SDL_GL_SetAttribute( SDL_GL_STENCIL_SIZE, 8 );
-   SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 2 );
-   SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 2 );
 
    gt->window = SDL_CreateWindow( title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE );
    if( !gt->window )
